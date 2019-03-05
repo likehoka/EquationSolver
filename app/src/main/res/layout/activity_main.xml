@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:paddingTop="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/title_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A*x² + B*x + C = 0"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/colorLetter"/>
+
+        <LinearLayout
+            android:id="@+id/firstLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_task"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:id="@+id/aTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="A " />
+
+            <EditText
+                android:id="@+id/aVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25dp"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="193dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstLine"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/bTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="25dp"
+                android:text="B " />
+
+            <EditText
+                android:id="@+id/bVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text=""
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondLine"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/cTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="C " />
+
+            <EditText
+                android:id="@+id/cVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dLine">
+
+            <TextView
+                android:id="@+id/dText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D:"
+                android:textSize="25dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/dTextResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text=" "
+                android:layout_weight="9"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/x1Line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dLine">
+
+            <TextView
+                android:id="@+id/x1Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X1:"
+                android:textSize="25dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/x1TextResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="25dp"
+                android:layout_weight="5"/>
+
+            <Button
+                android:id="@+id/solveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/solveButton"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/x1Line">
+
+            <TextView
+                android:id="@+id/x2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X2:"
+                android:textSize="25dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/x2TextResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text=" "
+                android:layout_weight="13"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</android.widget.LinearLayout>

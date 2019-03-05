@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EquationSolver</string>
+    <string name="aNotNull">A should not be 0</string>
+    <string name="errorField">Fill in all the fields correctly</string>
+    <string name="squareRootNot">No roots</string>
+    <string name="squareRootIsOne">1 root</string>
+    <string name="squareRootIsTwo">2 roots</string>
+    <string name="solveButton">Solve</string>
+</resources>
